@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Plus Jakarta";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x:hidden;
+}
+
+.starter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 45px;
+}
+
+.get {
+  z-index: 10;
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+  border: none;
+  text-transform: capitalize;
+  background: #13183f;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.get:hover {
+  background-color: #666ca3;
+  cursor: pointer;
+}
+
+.menu {
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.max {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+  margin-top: 26px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.butt2 {
+  width: 167px;
+  height: 56px;
+  border-radius: 31.5px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  margin-bottom: 46px;
+}
+
+.butt2:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  cursor: pointer;
+}
+.tablet {
+  display: none;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+.photo img {
+  width: 326px;
+  height: 301px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(1, 343px);
+  grid-auto-rows: 259px;
+  justify-content: center;
+  row-gap: 40px;
+  margin-top: 40px;
+}
+
+.different {
+  width: 343px;
+  height: 120px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  overflow: auto;
+  font-family: "Plus Jakarta Sans";
+  margin: auto;
+}
+
+.popular {
+  margin-top: 24px;
+  margin-left: 28px;
+}
+
+.format {
+  background: #ffffff;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 10px;
+  width: 343px;
+  height: 259px;
+  font-family: "Plus Jakarta Sans";
+}
+
+.format img {
+  transform: translateY(-50%);
+  margin-left: 28px;
+}
+
+.format a:hover {
+  color: #ffa7c3;
+}
+
+.format h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  margin-left: 28px;
+}
+
+.format p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+  margin-left: 28px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.format a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f74780;
+  margin-left: 28px;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 80px;
+  background: #13183f;
+  width: 100%;
+  height: 120px;
+}
+
+.closer {
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  border-radius: 28px;
+  width: 140px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Plus Jakarta Sans";
+  border: none;
+  margin-top: 36px;
+  margin-right: 16px;
+}
+
+.closer:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  cursor: pointer;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end img {
+  margin-top: 43px;
+  margin-left: 16px;
+}
+
+
+/* here starts tablet version of this webpage */
+@media screen and (min-width: 750px) {
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  
+  
+  
+  body {
+    background: #ffffff;
+    font-family: "Plus Jakarta";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .wrapper{
+    overflow-x:hidden;
+    background-image: url("https://cdn.glitch.global/ba31f3f1-c9c1-48a0-9e57-b92a190a19f0/image-hero-tablet.png?v=1656492538909");
+    background-repeat:no-repeat;
+    background-position: top -81px right -299px;
+  
+  }
+
+  .starter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 31px;
+    margin-left: 39px;
+    margin-right: 40px;
+    margin-bottom: 45px;
+  }
+
+  .get {
+    z-index: 10;
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    border: none;
+    text-transform: capitalize;
+    background: #13183f;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+
+  }
+
+  .get:hover {
+    background-color: #666ca3;
+    cursor: pointer;
+  }
+  
+  
+
+  .menu {
+    margin-left: 39px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+      
+  }
+
+  
+  .butt2 {
+  width: 167px;
+  height: 56px;
+  border-radius: 31.5px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  margin-bottom: 46px;
+}
+
+.butt2:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  cursor: pointer;
+}
+  
+  
+
+  .photo {
+    display: none;
+  }
+  
+ 
+/*   .tablet{
+    display:block;
+    transform:translate(20%, -25%)
+  } */
+  
+  
+   .boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 339px);
+  grid-auto-rows: 259px;
+  justify-content: center;
+  row-gap: 56px;
+  column-gap:11px;
+     margin-top:225px;
+}
+  
+  
+  
+  
+.different {
+  width: 339px;
+  height: 259px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  overflow: auto;
+  font-family: "Plus Jakarta Sans";
+  
+}
+  
+  
+  .popular {
+  margin-top: 56px;
+  margin-left: 32px;
+}
+  
+  
+  
+  
+  
+  
+}
+
+
+
+@media screen and (min-width:1440px){
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Plus Jakarta Sans';
+}
+  
+  .wrapper {
+    overflow-x:hidden;
+    background-image: url("https://cdn.glitch.global/ba31f3f1-c9c1-48a0-9e57-b92a190a19f0/image-hero-desktop.png?v=1656078353833");
+    background-repeat:no-repeat;
+    
+    background-position: top -171px right -352px;
+  }
+
+.starter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-bottom: 45px;
+  }
+  
+  
+  .menu{
+    margin-left:165px;
+    margin-top:252px;
+  }
+  
+  .text{
+    margin-top:29px;
+    margin-bottom:40px;
+  }
+  
+  
+  .boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 322px;
+  justify-content:center;
+  row-gap: 80px;
+  column-gap:30px;
+  margin-top:266px;
+    align-items:center;
+}
+  
+  
